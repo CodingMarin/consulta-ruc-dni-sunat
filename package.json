@@ -1,5 +1,5 @@
 {
-  "name": "@CodingMarin/consulta-ruc-dni-sunat",
+  "name": "@codingmarin/consulta-ruc-dni-sunat",
   "version": "1.0.0",
   "description": "An implementation of service sunat",
   "exports": {
