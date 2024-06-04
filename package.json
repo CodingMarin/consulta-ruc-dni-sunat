@@ -1,0 +1,47 @@
+{
+  "name": "@CodingMarin/consulta-ruc-dni-sunat",
+  "version": "1.0.0",
+  "description": "An implementation of service sunat",
+  "exports": {
+    "types": "./dist/types.d.ts",
+    "require": "./dist/index.js"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dni",
+    "ruc",
+    "sunat",
+    "consulta-ruc",
+    "consulta-ruc-sunat",
+    "consulta-dni",
+    "consulta-dni-sunat",
+    "consultas-ruc-sunat"
+  ],
+  "author": "Alexander Marin <marinalexander691@gmail.com>",
+  "license": "MIT",
+  "homepage": "",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingMarin/consulta-ruc-dni-sunat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CodingMarin/consulta-ruc-dni-sunat/issues"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^20.14.1",
+    "axios": "^1.7.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
