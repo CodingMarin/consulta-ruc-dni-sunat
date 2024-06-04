@@ -19,7 +19,7 @@ export class Dni {
     try {
       const response = await axios.post(
         "https://ww1.sunat.gob.pe/ol-ti-itatencionf5030/registro/solicitante",
-        params,
+        JSON.stringify(params),
         {
           headers: {
             "Content-Type": "application/json",
