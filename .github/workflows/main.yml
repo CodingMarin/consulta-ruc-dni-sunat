@@ -1,20 +1,22 @@
 name: Build and Publish Workflow
+
 on:
   push:
     branches: [main, master]
   pull_request:
     branches: [main, master]
+
 jobs:
-  publish-gpr:
+  publish-npm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: "20"
-          registry-url: "https://npm.pkg.github.com/"
+          registry-url: "https://registry.npmjs.org/"
       - run: npm install
       - run: npm run build
-      - run: npm publish
+      - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
