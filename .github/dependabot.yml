@@ -9,3 +9,5 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    npm:
+      token: "${{ secrets.NPM_AUTH_TOKEN }}"
