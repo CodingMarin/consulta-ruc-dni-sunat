@@ -10,4 +10,5 @@ updates:
     schedule:
       interval: "weekly"
     npm:
+      username: "codingmarin"
       token: "${{ secrets.NPM_AUTH_TOKEN }}"
