@@ -1,6 +1,6 @@
 {
   "name": "@codingmarin/consulta-ruc-dni-sunat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An implementation of service sunat",
   "exports": {
     "types": "./dist/types.d.ts",
